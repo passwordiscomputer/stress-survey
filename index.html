@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
 
@@ -10,6 +10,43 @@
     <title></title>
   </head>
   <body>
-
+    <div class="container">
+     <div class="jumbotron">
+       <h2>Stress Survey</h2>
+     </div>
+     <form id="stress-survey">
+       <div class="form-group">
+         <p>In the past year have you been affected by the following symptons?</p>
+         <input type="checkbox" name="stress-symptons" value="Sleep Loss">Loss of Sleep.<br>
+         <input type="checkbox" name="stress-symptons" value="Overwhelmed">Feeling overwhelmed.<br>
+         <input type="checkbox" name="stress-symptons" value="Over Eating">Over eating.<br>
+         <input type="checkbox" name="stress-symptons" value="Loss of Appetite">Appetite loss.<br>
+       </div>
+       <div class="form-group">
+         <p>In the past year have you been affected by the following health symptons?</p>
+         <input type="checkbox" name="health-symptons" value="High Blood Pressure">High Blood pressure.<br>
+         <input type="checkbox" name="health-symptons" value="Anxiety">Anxiety.<br>
+         <input type="checkbox" name="health-symptons" value="Head Ache">Headache.<br>
+         <input type="checkbox" name="health-symptons" value="Chest Pain">Chest Pain.<br>
+       </div>
+       <div class="form-group">
+         <p>In the past year how have you managed your stress?</p>
+         <input type="checkbox" name="stress-management" value="Exercise">Exercise.<br>
+         <input type="checkbox" name="stress-management" value="Meditate">Meditate.<br>
+         <input type="checkbox" name="stress-management" value="Cat">Pet a Cat.<br>
+         <input type="checkbox" name="stress-management" value="Extreme Sports">Extreme Sports.<br>
+       </div>
+      <button type="submit">Submit Survey</button>
+     </form>
+     <span id="stress-responses">
+       <p><b>You have identified the following stress symptons:</b></p>
+     </span>
+     <span id="health-responses">
+       <p><b>You have identified the following health symptons:</b></p>
+     </span>
+     <span id="management-responses">
+       <p><b>You have identified the following stress management symptons:</b></p>
+     </span>
+   </div>
   </body>
 </html>
