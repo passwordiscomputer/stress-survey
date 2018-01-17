@@ -23,14 +23,16 @@ $(document).ready(function(){
       managementCount += 1;
     });
 
+    $(".well").show();
+     
     if (stressCount >= 3) {
       if (managementCount >= 3) {
         $("#result1").show();
-      }else {
+      } else {
         $("#result2").show();
       }
-    }else {
-      $(result1).show();
+    } else {
+      $("#result1").show();
     }
 
 
